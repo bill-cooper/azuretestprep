@@ -1,4 +1,5 @@
 ﻿using Microsoft.Azure.WebJobs;
+using System.Diagnostics;
 
 namespace QueueProcessorWebJob
 {
@@ -6,8 +7,18 @@ namespace QueueProcessorWebJob
     {
         static void Main(string[] args)
         {
-            var host = new JobHost();
-            host.RunAndBlock();
+
+            var config = new JobHostConfiguration();
+            config.Tracing.ConsoleLevel = TraceLevel.Verbose;
+            
+            config.UseTimers();
+            config.UseDocumentDB();
+            config.UseCore();
+
+            using (var host = new JobHost(config))
+            {
+                host.RunAndBlock();
+            }
         }
     }
 }
