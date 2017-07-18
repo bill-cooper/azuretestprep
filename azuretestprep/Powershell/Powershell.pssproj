@@ -30,10 +30,19 @@
     <Folder Include="AppService\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppService\reset-appservice-webapp-publishprofile.ps1" />
+    <Compile Include="AppService\get-appservice-webapp.ps1" />
+    <Compile Include="AppService\new-appservice-webapp.ps1" />
+    <Compile Include="AppService\start-appservice-webapp.ps1" />
+    <Compile Include="AppService\get-appservice-webapp-publishprofile.ps1" />
+    <Compile Include="AppService\stop-appservice-webapp.ps1" />
+    <Compile Include="AppService\restart-appservice-webapp.ps1" />
+    <Compile Include="AppService\remove-appservice-webapp.ps1" />
     <Compile Include="AppService\remove-appserviceplan.ps1" />
     <Compile Include="AppService\get-appserviceplan.ps1" />
     <Compile Include="AppService\new-appserviceplan.ps1" />
-    <Compile Include="AppService\update-appserviceplan.ps1" />
+    <Compile Include="AppService\set-appservice-webapp.ps1" />
+    <Compile Include="AppService\set-appserviceplan.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
