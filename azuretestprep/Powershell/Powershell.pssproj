@@ -33,6 +33,8 @@
     <Compile Include="AppService\reset-appservice-webapp-publishprofile.ps1" />
     <Compile Include="AppService\get-appservice-webapp.ps1" />
     <Compile Include="AppService\new-appservice-webapp.ps1" />
+    <Compile Include="AppService\set-appservice-webapp-customdomain.ps1" />
+    <Compile Include="AppService\set-appservice-webapp-ssl-binding.ps1" />
     <Compile Include="AppService\start-appservice-webapp.ps1" />
     <Compile Include="AppService\get-appservice-webapp-publishprofile.ps1" />
     <Compile Include="AppService\stop-appservice-webapp.ps1" />
